@@ -13,11 +13,6 @@ OperatorMinusComposite::OperatorMinusComposite(Component *l, Component *r) : Ope
 OperatorMinusComposite::~OperatorMinusComposite() {
 }
 
-char OperatorMinusComposite::getOpSymbol() {
-    return '-';
-}
-
-double OperatorMinusComposite::operate(double leftValue, double rightValue) {
-    this->value = leftValue - rightValue;
-    return this->value;
+void OperatorMinusComposite::accept(Visitor *v){
+    v->VisitOperatorMinus(this);
 }

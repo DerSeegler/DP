@@ -13,12 +13,6 @@ OperatorPlusComposite::OperatorPlusComposite(Component *l, Component *r) : Opera
 OperatorPlusComposite::~OperatorPlusComposite() {
 }
 
-
-char OperatorPlusComposite::getOpSymbol() {
-    return '+';
-}
-
-double OperatorPlusComposite::operate(double leftValue, double rightValue) {
-    this->value = leftValue + rightValue;
-    return this->value;
+void OperatorPlusComposite::accept(Visitor *v){
+    v->VisitOperatorPlus(this);
 }

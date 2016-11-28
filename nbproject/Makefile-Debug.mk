@@ -36,13 +36,16 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/Component.o \
-	${OBJECTDIR}/OperateEvalIterator.o \
-	${OBJECTDIR}/OperatePrintIterator.o \
+	${OBJECTDIR}/EvalVisitor.o \
+	${OBJECTDIR}/InOrderIterator.o \
 	${OBJECTDIR}/OperatorComponent.o \
 	${OBJECTDIR}/OperatorMinusComposite.o \
 	${OBJECTDIR}/OperatorMultiComposite.o \
 	${OBJECTDIR}/OperatorPlusComposite.o \
+	${OBJECTDIR}/PostOrderIterator.o \
+	${OBJECTDIR}/PrintVisitor.o \
 	${OBJECTDIR}/ValueLeaf.o \
+	${OBJECTDIR}/Visitor.o \
 	${OBJECTDIR}/main.o
 
 
@@ -73,47 +76,62 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/sa3: ${OBJECTFILES}
 ${OBJECTDIR}/Component.o: Component.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Component.o Component.cpp
+	$(COMPILE.cc) -g -I/usr/include -I/usr/local/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Component.o Component.cpp
 
-${OBJECTDIR}/OperateEvalIterator.o: OperateEvalIterator.cpp 
+${OBJECTDIR}/EvalVisitor.o: EvalVisitor.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/OperateEvalIterator.o OperateEvalIterator.cpp
+	$(COMPILE.cc) -g -I/usr/include -I/usr/local/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/EvalVisitor.o EvalVisitor.cpp
 
-${OBJECTDIR}/OperatePrintIterator.o: OperatePrintIterator.cpp 
+${OBJECTDIR}/InOrderIterator.o: InOrderIterator.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/OperatePrintIterator.o OperatePrintIterator.cpp
+	$(COMPILE.cc) -g -I/usr/include -I/usr/local/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/InOrderIterator.o InOrderIterator.cpp
 
 ${OBJECTDIR}/OperatorComponent.o: OperatorComponent.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/OperatorComponent.o OperatorComponent.cpp
+	$(COMPILE.cc) -g -I/usr/include -I/usr/local/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/OperatorComponent.o OperatorComponent.cpp
 
 ${OBJECTDIR}/OperatorMinusComposite.o: OperatorMinusComposite.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/OperatorMinusComposite.o OperatorMinusComposite.cpp
+	$(COMPILE.cc) -g -I/usr/include -I/usr/local/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/OperatorMinusComposite.o OperatorMinusComposite.cpp
 
 ${OBJECTDIR}/OperatorMultiComposite.o: OperatorMultiComposite.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/OperatorMultiComposite.o OperatorMultiComposite.cpp
+	$(COMPILE.cc) -g -I/usr/include -I/usr/local/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/OperatorMultiComposite.o OperatorMultiComposite.cpp
 
 ${OBJECTDIR}/OperatorPlusComposite.o: OperatorPlusComposite.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/OperatorPlusComposite.o OperatorPlusComposite.cpp
+	$(COMPILE.cc) -g -I/usr/include -I/usr/local/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/OperatorPlusComposite.o OperatorPlusComposite.cpp
+
+${OBJECTDIR}/PostOrderIterator.o: PostOrderIterator.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -I/usr/include -I/usr/local/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PostOrderIterator.o PostOrderIterator.cpp
+
+${OBJECTDIR}/PrintVisitor.o: PrintVisitor.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -I/usr/include -I/usr/local/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PrintVisitor.o PrintVisitor.cpp
 
 ${OBJECTDIR}/ValueLeaf.o: ValueLeaf.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ValueLeaf.o ValueLeaf.cpp
+	$(COMPILE.cc) -g -I/usr/include -I/usr/local/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ValueLeaf.o ValueLeaf.cpp
+
+${OBJECTDIR}/Visitor.o: Visitor.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -I/usr/include -I/usr/local/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Visitor.o Visitor.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+	$(COMPILE.cc) -g -I/usr/include -I/usr/local/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
 
 # Subprojects
 .build-subprojects:

@@ -12,3 +12,7 @@ ValueLeaf::ValueLeaf(double v) : Component(v){
 
 ValueLeaf::~ValueLeaf() {
 }
+
+void ValueLeaf::accept(Visitor *v){
+    v->VisitValue(this);
+}

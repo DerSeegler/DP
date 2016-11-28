@@ -31,3 +31,4 @@
 *.d
 *.stackdump
 dist
+*.inc

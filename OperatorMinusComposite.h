@@ -16,6 +16,8 @@ public:
     virtual ~OperatorMinusComposite();
     char getOpSymbol();
     double operate(double, double);
+    
+    void accept(Visitor *);
 private:
 
 };

@@ -9,14 +9,15 @@
 #define	OPERATEITERATOR_H
 
 #include "OperatorComponent.h"
+#include "Visitor.h"
 
-class EvalIterator {
+class PostOrderIterator {
 public:
-    EvalIterator();
-    EvalIterator(const EvalIterator& orig);
+    PostOrderIterator();
     
-    double eval(Component *);
-    virtual ~EvalIterator();
+    void traverse(Component *, Visitor *);
+    virtual ~PostOrderIterator();
+    
 private:
 
 };

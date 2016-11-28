@@ -5,13 +5,16 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>Component.h</itemPath>
-      <itemPath>OperateEvalIterator.h</itemPath>
-      <itemPath>OperatePrintIterator.h</itemPath>
+      <itemPath>EvalVisitor.h</itemPath>
+      <itemPath>InOrderIterator.h</itemPath>
       <itemPath>OperatorComponent.h</itemPath>
       <itemPath>OperatorMinusComposite.h</itemPath>
       <itemPath>OperatorMultiComposite.h</itemPath>
       <itemPath>OperatorPlusComposite.h</itemPath>
+      <itemPath>PostOrderIterator.h</itemPath>
+      <itemPath>PrintVisitor.h</itemPath>
       <itemPath>ValueLeaf.h</itemPath>
+      <itemPath>Visitor.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -21,13 +24,16 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>Component.cpp</itemPath>
-      <itemPath>OperateEvalIterator.cpp</itemPath>
-      <itemPath>OperatePrintIterator.cpp</itemPath>
+      <itemPath>EvalVisitor.cpp</itemPath>
+      <itemPath>InOrderIterator.cpp</itemPath>
       <itemPath>OperatorComponent.cpp</itemPath>
       <itemPath>OperatorMinusComposite.cpp</itemPath>
       <itemPath>OperatorMultiComposite.cpp</itemPath>
       <itemPath>OperatorPlusComposite.cpp</itemPath>
+      <itemPath>PostOrderIterator.cpp</itemPath>
+      <itemPath>PrintVisitor.cpp</itemPath>
       <itemPath>ValueLeaf.cpp</itemPath>
+      <itemPath>Visitor.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -51,18 +57,24 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>/usr/include</pElem>
+            <pElem>/usr/local/include</pElem>
+          </incDir>
+        </ccTool>
       </compileType>
       <item path="Component.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Component.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="OperateEvalIterator.cpp" ex="false" tool="1" flavor2="0">
+      <item path="EvalVisitor.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="OperateEvalIterator.h" ex="false" tool="3" flavor2="0">
+      <item path="EvalVisitor.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="OperatePrintIterator.cpp" ex="false" tool="1" flavor2="0">
+      <item path="InOrderIterator.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="OperatePrintIterator.h" ex="false" tool="3" flavor2="0">
+      <item path="InOrderIterator.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="OperatorComponent.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -80,9 +92,21 @@
       </item>
       <item path="OperatorPlusComposite.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="PostOrderIterator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PostOrderIterator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PrintVisitor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PrintVisitor.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="ValueLeaf.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ValueLeaf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Visitor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Visitor.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -111,13 +135,13 @@
       </item>
       <item path="Component.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="OperateEvalIterator.cpp" ex="false" tool="1" flavor2="0">
+      <item path="EvalVisitor.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="OperateEvalIterator.h" ex="false" tool="3" flavor2="0">
+      <item path="EvalVisitor.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="OperatePrintIterator.cpp" ex="false" tool="1" flavor2="0">
+      <item path="InOrderIterator.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="OperatePrintIterator.h" ex="false" tool="3" flavor2="0">
+      <item path="InOrderIterator.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="OperatorComponent.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -135,9 +159,21 @@
       </item>
       <item path="OperatorPlusComposite.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="PostOrderIterator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PostOrderIterator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PrintVisitor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PrintVisitor.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="ValueLeaf.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ValueLeaf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Visitor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Visitor.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>

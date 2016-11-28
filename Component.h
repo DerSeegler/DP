@@ -14,16 +14,18 @@
 #ifndef COMPONENT_H
 #define COMPONENT_H
 
+class Visitor;
+
+#include "Visitor.h"
+
 class Component {
 public:
     Component(double);
-    Component(const Component& orig);
-    virtual ~Component()= 0;
+    virtual ~Component();
     
-    virtual double operate(double, double);
-    virtual char getOpSymbol();
     virtual Component * getLeft();
     virtual Component * getRight();
+    virtual void accept(Visitor *)=0;
     bool isLeaf();
     
     double value;

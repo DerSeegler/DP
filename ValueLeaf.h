@@ -14,7 +14,7 @@ class ValueLeaf : public Component {
 public:
     ValueLeaf(double);
     virtual ~ValueLeaf();
-    
+    void accept(Visitor *);
 private:
 
 };

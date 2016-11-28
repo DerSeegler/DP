@@ -10,8 +10,10 @@
 #include "OperatorMultiComposite.h"
 #include "OperatorPlusComposite.h"
 #include "ValueLeaf.h"
-#include "OperatePrintIterator.h"
-#include "OperateEvalIterator.h"
+#include "InOrderIterator.h"
+#include "PostOrderIterator.h"
+#include "PrintVisitor.h"
+#include "EvalVisitor.h"
 #include <stdio.h>
 using namespace std;
 
@@ -34,10 +36,14 @@ int main(int argc, char** argv) {
     
     
     OperatorPlusComposite root = OperatorPlusComposite(&multileft, &minusright);
-    PrintIterator iter_print;
-    EvalIterator iter_eval;
-    iter_print.print(&root);
-    printf(" = %f", iter_eval.eval(&root));
+    InOrderIterator iter_in_order;
+    PostOrderIterator iter_post_order;
+    EvalVisitor ev= EvalVisitor();
+    PrintVisitor pv= PrintVisitor();
+    iter_in_order.traverse(&root, &pv);
+    iter_post_order.traverse(&root, &ev);
+    
+    printf(" = %f", ev.getResult());
     return 0;
 }
 

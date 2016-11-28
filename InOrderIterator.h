@@ -11,13 +11,14 @@
 #include "Component.h"
 #include "OperatorComponent.h"
 
+#include "Visitor.h"
 
-class PrintIterator {
+class InOrderIterator {
 public:
-    PrintIterator();
-    PrintIterator(const PrintIterator& orig);
-    void print(Component *);
-    virtual ~PrintIterator();
+    InOrderIterator();
+    InOrderIterator(const InOrderIterator& orig);
+    void traverse(Component *, Visitor *);
+    virtual ~InOrderIterator();
 private:
 
 };

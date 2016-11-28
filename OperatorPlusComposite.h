@@ -14,9 +14,7 @@ class OperatorPlusComposite : public OperatorComponent {
 public:
     OperatorPlusComposite(Component* , Component*);
     virtual ~OperatorPlusComposite();
-    char getOpSymbol();
-    double operate(double, double);
-
+    void accept(Visitor *);
 private:
 
 };

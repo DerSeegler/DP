@@ -13,11 +13,6 @@ OperatorMultiComposite::OperatorMultiComposite(Component *l, Component *r) : Ope
 OperatorMultiComposite::~OperatorMultiComposite() {
 }
 
-char OperatorMultiComposite::getOpSymbol() {
-    return '*';
-}
-
-double OperatorMultiComposite::operate(double leftValue, double rightValue) {
-    this->value = leftValue * rightValue;
-    return this->value;
+void OperatorMultiComposite::accept(Visitor *v){
+    v->VisitOperatorMulti(this);
 }
