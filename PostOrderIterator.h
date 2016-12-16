@@ -8,10 +8,9 @@
 #ifndef OPERATEITERATOR_H
 #define	OPERATEITERATOR_H
 
-#include "OperatorComponent.h"
-#include "Visitor.h"
+#include "Iterator.h"
 
-class PostOrderIterator {
+class PostOrderIterator : public Iterator {
 public:
     PostOrderIterator();
     

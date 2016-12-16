@@ -6,23 +6,32 @@
  */
 
 #include "PostOrderIterator.h"
-#include "Component.h"
 
-PostOrderIterator::PostOrderIterator() {
+PostOrderIterator::PostOrderIterator() : Iterator(){
 }
 
 PostOrderIterator::~PostOrderIterator() {
 }
 
 void PostOrderIterator::traverse(Component * root, Visitor * v) {
-    if(root->isLeaf()){
-        root->accept(v);
-        return;
-    }
-    this->traverse(root->getLeft(), v);
-            
-    this->traverse(root->getRight(), v);
+    Component * l =root->getLeft(); 
+    Component * r =root->getRight();
     
+    if(l && r){
+        v->setState(0);
+        root->accept(v);
+    }
+    
+    if(l) this->traverse(l,v);
+    if(r) this->traverse(r, v);
+    
+    v->setState(1);
     root->accept(v);
+    
+    if(l && r){
+        v->setState(2);
+        root->accept(v);
+    }
+
 }
 

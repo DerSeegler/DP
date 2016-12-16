@@ -7,25 +7,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/ldapusers/istyaseeg/Dokumente/NetBeansProjects/SA3/ValueLeaf.h</file>
-            <file>file:/home/ldapusers/istyaseeg/Dokumente/NetBeansProjects/SA3/Component.h</file>
-            <file>file:/home/ldapusers/istyaseeg/Dokumente/NetBeansProjects/SA3/PostOrderIterator.cpp</file>
-            <file>file:/home/ldapusers/istyaseeg/Dokumente/NetBeansProjects/SA3/InOrderIterator.cpp</file>
-            <file>file:/home/ldapusers/istyaseeg/Dokumente/NetBeansProjects/SA3/OperatorMultiComposite.cpp</file>
-            <file>file:/home/ldapusers/istyaseeg/Dokumente/NetBeansProjects/SA3/Visitor.h</file>
-            <file>file:/home/ldapusers/istyaseeg/Dokumente/NetBeansProjects/SA3/Visitor.cpp</file>
-            <file>file:/home/ldapusers/istyaseeg/Dokumente/NetBeansProjects/SA3/ValueLeaf.cpp</file>
-            <file>file:/home/ldapusers/istyaseeg/Dokumente/NetBeansProjects/SA3/OperatorMinusComposite.cpp</file>
-            <file>file:/home/ldapusers/istyaseeg/Dokumente/NetBeansProjects/SA3/InOrderIterator.h</file>
-            <file>file:/home/ldapusers/istyaseeg/Dokumente/NetBeansProjects/SA3/EvalVisitor.h</file>
-            <file>file:/home/ldapusers/istyaseeg/Dokumente/NetBeansProjects/SA3/PrintVisitor.cpp</file>
-            <file>file:/home/ldapusers/istyaseeg/Dokumente/NetBeansProjects/SA3/PrintVisitor.h</file>
-            <file>file:/home/ldapusers/istyaseeg/Dokumente/NetBeansProjects/SA3/EvalVisitor.cpp</file>
-            <file>file:/home/ldapusers/istyaseeg/Dokumente/NetBeansProjects/SA3/OperatorComponent.h</file>
-            <file>file:/home/ldapusers/istyaseeg/Dokumente/NetBeansProjects/SA3/main.cpp</file>
-            <file>file:/home/ldapusers/istyaseeg/Dokumente/NetBeansProjects/SA3/OperatorPlusComposite.cpp</file>
-            <file>file:/home/ldapusers/istyaseeg/Dokumente/NetBeansProjects/SA3/Component.cpp</file>
-            <file>file:/home/ldapusers/istyaseeg/Dokumente/NetBeansProjects/SA3/PostOrderIterator.h</file>
+            <file>file:/home/andi/Studium/Master/5.Semester/design%20patterns/DP/Printer.cpp</file>
+            <file>file:/home/andi/Studium/Master/5.Semester/design%20patterns/DP/Evaluator.h</file>
+            <file>file:/home/andi/Studium/Master/5.Semester/design%20patterns/DP/PolishPrinter.h</file>
+            <file>file:/home/andi/Studium/Master/5.Semester/design%20patterns/DP/PolishPrinter.cpp</file>
+            <file>file:/home/andi/Studium/Master/5.Semester/design%20patterns/DP/Printer.h</file>
+            <file>file:/home/andi/Studium/Master/5.Semester/design%20patterns/DP/ExpressionMethod.cpp</file>
+            <file>file:/home/andi/Studium/Master/5.Semester/design%20patterns/DP/Evaluator.cpp</file>
+            <file>file:/home/andi/Studium/Master/5.Semester/design%20patterns/DP/ExpressionMethod.h</file>
+            <file>file:/home/andi/Studium/Master/5.Semester/design%20patterns/DP/InOrderIterator.h</file>
+            <file>file:/home/andi/Studium/Master/5.Semester/design%20patterns/DP/main.cpp</file>
         </group>
     </open-files>
 </project-private>

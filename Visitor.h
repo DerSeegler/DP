@@ -29,6 +29,7 @@ public:
     virtual void VisitValue(Component*)=0;
     void setState(int);
     
+    
 protected:
     int state;
 };

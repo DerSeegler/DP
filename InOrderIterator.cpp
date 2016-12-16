@@ -8,10 +8,7 @@
 #include "InOrderIterator.h"
 #include <stdio.h>
 
-InOrderIterator::InOrderIterator() {
-}
-
-InOrderIterator::InOrderIterator(const InOrderIterator& orig) {
+InOrderIterator::InOrderIterator() : Iterator(){
 }
 
 InOrderIterator::~InOrderIterator() {

@@ -5,20 +5,17 @@
  */
 
 /* 
- * File:   Visitor.cpp
- * Author: istyaseeg
+ * File:   Iterator.cpp
+ * Author: andi
  * 
- * Created on November 18, 2016, 1:41 PM
+ * Created on 2. Dezember 2016, 13:01
  */
 
-#include "Visitor.h"
+#include "Iterator.h"
 
-Visitor::Visitor() {
+Iterator::Iterator() {
 }
 
-Visitor::~Visitor() {
+Iterator::~Iterator() {
 }
 
-void Visitor::setState(int i){
-    this->state=i;
-}

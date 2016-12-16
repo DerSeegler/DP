@@ -19,32 +19,41 @@ EvalVisitor::EvalVisitor() : Visitor() {
 EvalVisitor::~EvalVisitor() {
 }
 
+
 double EvalVisitor::getResult(){
     return this->stack.back();
 }
 
 void EvalVisitor::VisitOperatorPlus(Component* c){
-    double r= this->stack.back();
-    this->stack.pop_back();
-    double l= this->stack.back();
-    this->stack.pop_back();
-    this->stack.push_back(l+r);
+    if(this->state == 2){
+        double r= this->stack.back();
+        this->stack.pop_back();
+        double l= this->stack.back();
+        this->stack.pop_back();
+        this->stack.push_back(l+r);
+    }
 }
 void EvalVisitor::VisitOperatorMinus(Component* c){
-    double r= this->stack.back();
-    this->stack.pop_back();
-    double l= this->stack.back();
-    this->stack.pop_back();
-    this->stack.push_back(l-r);
+    if(this->state == 2){
+        double r= this->stack.back();
+        this->stack.pop_back();
+        double l= this->stack.back();
+        this->stack.pop_back();
+        this->stack.push_back(l-r);
+    }
 }
 void EvalVisitor::VisitOperatorMulti(Component* c){
-    double r= this->stack.back();
-    this->stack.pop_back();
-    double l= this->stack.back();
-    this->stack.pop_back();
-    this->stack.push_back(l*r);
+    if(this->state == 2){
+        double r= this->stack.back();
+        this->stack.pop_back();
+        double l= this->stack.back();
+        this->stack.pop_back();
+        this->stack.push_back(l*r);
+    }
 }
 
 void EvalVisitor::VisitValue(Component* c){
-    this->stack.push_back(c->value);
+    if(this->state == 1){
+        this->stack.push_back(c->value);
+    }
 }

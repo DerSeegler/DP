@@ -10,13 +10,12 @@
 
 #include "Component.h"
 #include "OperatorComponent.h"
-
+#include "Iterator.h"
 #include "Visitor.h"
 
-class InOrderIterator {
+class InOrderIterator : public Iterator{
 public:
     InOrderIterator();
-    InOrderIterator(const InOrderIterator& orig);
     void traverse(Component *, Visitor *);
     virtual ~InOrderIterator();
 private:

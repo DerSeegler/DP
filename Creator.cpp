@@ -5,20 +5,17 @@
  */
 
 /* 
- * File:   Visitor.cpp
- * Author: istyaseeg
+ * File:   Creator.cpp
+ * Author: andi
  * 
- * Created on November 18, 2016, 1:41 PM
+ * Created on 2. Dezember 2016, 12:39
  */
 
-#include "Visitor.h"
+#include "Creator.h"
 
-Visitor::Visitor() {
+Creator::Creator() {
 }
 
-Visitor::~Visitor() {
+Creator::~Creator() {
 }
 
-void Visitor::setState(int i){
-    this->state=i;
-}

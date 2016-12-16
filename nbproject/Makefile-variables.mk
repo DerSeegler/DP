@@ -9,11 +9,11 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-Linux
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-Linux
-CND_ARTIFACT_NAME_Debug=sa3
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux/sa3
+CND_ARTIFACT_NAME_Debug=dp
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux/dp
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Linux/package
-CND_PACKAGE_NAME_Debug=sa3.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux/package/sa3.tar
+CND_PACKAGE_NAME_Debug=dp.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux/package/dp.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin_4.x_1-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin_4.x_1-Windows

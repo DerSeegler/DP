@@ -14,6 +14,9 @@
 #include "PostOrderIterator.h"
 #include "PrintVisitor.h"
 #include "EvalVisitor.h"
+#include "Evaluator.h"
+#include "PolishPrinter.h"
+#include "Printer.h"
 #include <stdio.h>
 using namespace std;
 
@@ -27,23 +30,23 @@ int main(int argc, char** argv) {
     double cvalue= 3.0;
     double dvalue= 4.0;
     
-    
     OperatorPlusComposite plusleft = OperatorPlusComposite(new ValueLeaf(avalue),  new ValueLeaf(bvalue));
     OperatorMinusComposite minusleft = OperatorMinusComposite(new ValueLeaf(avalue),new ValueLeaf(cvalue));
     OperatorMultiComposite multileft = OperatorMultiComposite(&plusleft,&minusleft);
     OperatorMultiComposite multiright = OperatorMultiComposite( new ValueLeaf(bvalue), new ValueLeaf(dvalue));
     OperatorMinusComposite minusright = OperatorMinusComposite(&multiright, new ValueLeaf(avalue));
-    
-    
     OperatorPlusComposite root = OperatorPlusComposite(&multileft, &minusright);
-    InOrderIterator iter_in_order;
-    PostOrderIterator iter_post_order;
-    EvalVisitor ev= EvalVisitor();
-    PrintVisitor pv= PrintVisitor();
-    iter_in_order.traverse(&root, &pv);
-    iter_post_order.traverse(&root, &ev);
+
+    PolishPrinter * polish_printer = new PolishPrinter(&root);
+    Printer * printer = new Printer(&root);
+    Evaluator * evaluator =  new Evaluator(&root);
     
-    printf(" = %f", ev.getResult());
+    printer->run();
+    evaluator->run();
+    printf(" = %f", evaluator->getResult());
+    printf("\nPolish view: ");
+    polish_printer->run();
+    
     return 0;
 }
 

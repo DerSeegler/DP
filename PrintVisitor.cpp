@@ -34,16 +34,16 @@ bool PrintVisitor::Print(string s){
 }
 
 void PrintVisitor::VisitOperatorPlus(Component* c){
-    this->Print(" + ");
+    this->Print("+");
 }
 void PrintVisitor::VisitOperatorMinus(Component* c){
-    this->Print(" - ");
+    this->Print("-");
 }
 void PrintVisitor::VisitOperatorMulti(Component* c){
-    this->Print(" * ");
+    this->Print("*");
 }
 void PrintVisitor::VisitValue(Component* c){
     ostringstream strs;
-    strs << c->value;
+    strs << " " <<c->value << " ";
     this->Print(strs.str());
 }
